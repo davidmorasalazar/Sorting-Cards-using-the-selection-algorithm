@@ -58,6 +58,7 @@ function processFormData1() {
             sortMe1[i] = aux;
           }
         }
+    // let bucle = document.createElement("div");    
     for(i=0; i < sortMe1.length; i++) {
         let sort = document.createElement("div");
         sort.classList.add("sort");
@@ -69,6 +70,7 @@ function processFormData1() {
         sort.appendChild(n);
         container1.appendChild(sort);
         console.log(sortMe1);
+        
 }
         min++;
     }    
