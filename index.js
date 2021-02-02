@@ -58,6 +58,18 @@ function processFormData1() {
             sortMe1[i] = aux;
           }
         }
+    for(i=0; i < sortMe1.length; i++) {
+        let sort = document.createElement("div");
+        sort.classList.add("sort");
+        let p = document.createElement("span");
+        p.innerHTML = symbol[i];
+        let n = document.createElement("span");
+        n.innerHTML = sortMe1[i];
+        sort.appendChild(p);
+        sort.appendChild(n);
+        container1.appendChild(sort);
+        console.log(sortMe1);
+}
         min++;
     }    
     // while (wall > 0){
@@ -74,16 +86,16 @@ function processFormData1() {
     //     wall--; //decrease the wall for optimization
     // };
     // symbolglobal = symbol;
-    for(i=0; i < sortMe1.length; i++) {
-        let sort = document.createElement("div");
-        sort.classList.add("sort");
-        let p = document.createElement("span");
-        p.innerHTML = symbol[i];
-        let n = document.createElement("span");
-        n.innerHTML = sortMe1[i];
-        sort.appendChild(p);
-        sort.appendChild(n);
-        container1.appendChild(sort);
-        console.log(sortMe1);
-}
+//     for(i=0; i < sortMe1.length; i++) {
+//         let sort = document.createElement("div");
+//         sort.classList.add("sort");
+//         let p = document.createElement("span");
+//         p.innerHTML = symbol[i];
+//         let n = document.createElement("span");
+//         n.innerHTML = sortMe1[i];
+//         sort.appendChild(p);
+//         sort.appendChild(n);
+//         container1.appendChild(sort);
+//         console.log(sortMe1);
+// }
     };
