@@ -58,46 +58,22 @@ function processFormData1() {
             sortMe1[i] = aux;
           }
         }
+    let contenedor = document.createElement("div");    
     // let bucle = document.createElement("div");    
-    for(i=0; i < sortMe1.length; i++) {
-        let sort = document.createElement("div");
-        sort.classList.add("sort");
-        let p = document.createElement("span");
-        p.innerHTML = symbol[i];
-        let n = document.createElement("span");
-        n.innerHTML = sortMe1[i];
-        sort.appendChild(p);
-        sort.appendChild(n);
-        container1.appendChild(sort);
-        console.log(sortMe1);
-        
+        for(i=0; i < sortMe1.length; i++) {
+            let sort = document.createElement("div");
+            sort.classList.add("sort");
+            let p = document.createElement("span");
+            p.innerHTML = symbol[i];
+            let n = document.createElement("span");
+            n.innerHTML = sortMe1[i];
+            sort.appendChild(p);
+            sort.appendChild(n);
+            // container1.appendChild(sort);
+            console.log(sortMe1);
+            contenedor.appendChild(sort);
 }
+    container1.appendChild(contenedor);        
         min++;
     }    
-    // while (wall > 0){
-    //     let index = 0;
-    //     while (index < wall) {
-    //       //compare the adjacent positions, if the right one is bigger, we have to swap
-    //       if (sortMe1[index] > sortMe1[index + 1]) { 
-    //         let aux = symbol[index]; 
-    //         symbol[index] = symbol[index + 1];
-    //         symbol[index + 1] = aux;
-    //       }
-    //       index++;
-    //     }
-    //     wall--; //decrease the wall for optimization
-    // };
-    // symbolglobal = symbol;
-//     for(i=0; i < sortMe1.length; i++) {
-//         let sort = document.createElement("div");
-//         sort.classList.add("sort");
-//         let p = document.createElement("span");
-//         p.innerHTML = symbol[i];
-//         let n = document.createElement("span");
-//         n.innerHTML = sortMe1[i];
-//         sort.appendChild(p);
-//         sort.appendChild(n);
-//         container1.appendChild(sort);
-//         console.log(sortMe1);
-// }
     };
